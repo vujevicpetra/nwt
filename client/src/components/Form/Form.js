@@ -6,7 +6,6 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import useStyles from './styles';
 import { createPost, updatePost } from '../../actions/posts';
-//import { updatePost } from '../../../../server/controllers/posts'; //?
 
 const Form = ({ currentId, setCurrentId }) => {
     const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
