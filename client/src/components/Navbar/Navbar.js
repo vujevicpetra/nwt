@@ -38,7 +38,7 @@ const Navbar = () => {
     return (
         <AppBar className={classes.appBar} position="static" color="inherit">
             <div className={classes.brandContainer}>
-                <Typography component={Link} to="/" className={classes.heading} variant="h2" align="center">Review</Typography>
+                <Typography component={Link} to="/" className={classes.heading} variant="h2" align="center">You Review</Typography>
                 <img className={classes.image} src={review} alt="review" height="60" />
             </div>
             <Toolbar className={classes.toolbar}>
@@ -49,7 +49,7 @@ const Navbar = () => {
                     <Button variant="contained" className={classes.logout} color="secondary" onClick={logout} >Logout</Button>
                 </div>
                 ) : (
-                    <Button component={Link} to="/auth" variant="contained" color="primary">Sign In</Button>
+                    <Button component={Link} to="/auth" variant="contained" color="secondary">Sign In</Button>
                 )}
             </Toolbar>
         </AppBar>
